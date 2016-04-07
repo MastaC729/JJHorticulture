@@ -1,4 +1,4 @@
 MastaCTestMod
 =============
 
-My first mod!
+Sample text
