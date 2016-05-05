@@ -7,7 +7,9 @@ Many of the features are already planned out, so implementation and art assets a
 
 If you have any inquiries about the development of this mod, feel free to leave me an email at curtis.filchner@gmail.com, and I will try to answer your email ASAP. If there is ever a desire to donate to the development of this mod, I will consider starting a Patreon to assist those who want to support our work.
 
+=============
 Credits:
+=============
 
 MastaC729: head developer and designer
 kosakriszi: developer and general advice giver :)
