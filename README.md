@@ -23,7 +23,7 @@ The "Software" refers to JJHorticulture.
 ---
 The MIT License (MIT)
 
-Copyright (c) 2015 OpenMods Team
+Copyright (C) 2016 Jiving Janko Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
