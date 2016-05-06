@@ -1,21 +1,42 @@
 package com.dedotatedwam.jjhorticulture;
 
-import net.minecraft.init.Blocks;
+
+import com.dedotatedwam.jjhorticulture.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = JJHorticulture.MODID, name = JJHorticulture.NAME, version = JJHorticulture.VERSION)
+
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class JJHorticulture
 {
-    public static final String MODID = "jjhorticulture";
-    public static final String VERSION = "0.0.1";
-    public static final String NAME = "Jiving Janko Horticulture";
-    
+    public static JJTabs myTab;
+
+    @SidedProxy(clientSide = Reference.PROXY_CLIENT_CLASS, serverSide = Reference.PROXY_SERVER_CLASS)
+    public static CommonProxy proxy;
+
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event)
+    {
+        proxy.preInit();
+    }
+
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-		// some example code
-        System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
+        /*GameRegistry.addRecipe(new ItemStack(pH_tester,1), new Object[]{
+            "A  ",
+            "A  ",
+            'A', Items.iron_ingot
+    });*/
+    }
+
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event)
+    {
+
     }
 }

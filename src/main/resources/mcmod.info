@@ -1,8 +1,8 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "jjhorticulture",
+  "name": "Jiving Janko Horticulture",
+  "description": "A mod meant to make farming and gardening more realistic.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
