@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "jjhorticulture:fertilizer_applier_model" },
+		"facing=east": { "model": "jjhorticulture:fertilizer_applier_model", "y": 90 },
+		"facing=south": { "model": "jjhorticulture:fertilizer_applier_model", "y": 180  },
+		"facing=west": { "model": "jjhorticulture:fertilizer_applier_model", "y": 270  }
+    }
+}

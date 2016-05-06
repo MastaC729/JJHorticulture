@@ -9,12 +9,12 @@ public class JJTabs extends CreativeTabs {
     public JJTabs(String tabName)
     {
         super(tabName);
+        this.setBackgroundImageName("dedotatedwam.png");
     }
 
     @Override
     public Item getTabIconItem()
     {
-        //TODO Auto-generated method stub
         return CommonProxy.pH_tester;
     }
 }

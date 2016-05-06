@@ -1,0 +1,9 @@
+﻿//Blocks
+tile.fertilizer_applier.name = Fertilizer Applier
+
+//Items
+item.pH_tester.name=pH Tester
+item.nutrient_tester.name=Nutrient Tester
+
+//Creative Tabs
+itemGroup.tabJJHorticulture=Jiving Janko Horticulture

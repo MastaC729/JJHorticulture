@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jjhorticulture:blocks/fertilizer_applier_top",
+    "up": "jjhorticulture:blocks/fertilizer_applier_top",
+    "north": "jjhorticulture:blocks/fertilizer_applier_side",
+    "east": "jjhorticulture:blocks/fertilizer_applier_side",
+    "south": "jjhorticulture:blocks/fertilizer_applier_front",
+    "west": "jjhorticulture:blocks/fertilizer_applier_side",
+    "particle": "blocks/lapis_block"
+  }
+}

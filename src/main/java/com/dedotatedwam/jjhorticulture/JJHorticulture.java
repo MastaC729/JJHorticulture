@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class JJHorticulture
 {
-    public static JJTabs myTab;
+    public static final JJTabs tabJJHorticulture = new JJTabs("tabJJHorticulture");
 
     @SidedProxy(clientSide = Reference.PROXY_CLIENT_CLASS, serverSide = Reference.PROXY_SERVER_CLASS)
     public static CommonProxy proxy;
@@ -32,6 +32,7 @@ public class JJHorticulture
             "A  ",
             'A', Items.iron_ingot
     });*/
+        // TODO Move the above recipe call to its proper location
     }
 
     @EventHandler
