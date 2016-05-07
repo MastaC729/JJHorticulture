@@ -17,7 +17,7 @@ public class CommonProxy {
 
     public static BlockFertilizerApplier fertilizer_applier;     // Fertilizer applier block
 
-    public static void preInit()
+    public void preInit()
     {
         //Items
         pH_tester = (ItemJJBasic)(new ItemJJBasic().setUnlocalizedName("pH_tester"));
@@ -34,12 +34,12 @@ public class CommonProxy {
         GameRegistry.registerBlock(fertilizer_applier, "fertilizer_applier");
     }
 
-    public static void init()
+    public void init()
     {
         Recipes.register();
     }
 
-    public static void postInit()
+    public void postInit()
     {
 
     }

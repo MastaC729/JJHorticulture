@@ -10,8 +10,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ClientProxy extends CommonProxy {
 
-    public static void preInit()
+    public void preInit()
     {
+        super.preInit();
         System.out.println("NIGGA JAMES");
         System.out.println("IS THIS THING ON???");
         System.out.println("NIGGA JAMES");
@@ -31,13 +32,13 @@ public class ClientProxy extends CommonProxy {
         ModelLoader.setCustomModelResourceLocation(item_fertilizer_applier, Reference.DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);
     }
 
-    public static void init()
+    public void init()
     {
-
+        super.init();
     }
 
-    public static void postInit()
+    public void postInit()
     {
-
+        super.postInit();
     }
 }
