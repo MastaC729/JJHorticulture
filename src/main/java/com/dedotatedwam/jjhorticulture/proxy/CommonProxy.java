@@ -1,13 +1,9 @@
 package com.dedotatedwam.jjhorticulture.proxy;
 
-import com.dedotatedwam.jjhorticulture.JJHorticulture;
+import com.dedotatedwam.jjhorticulture.Recipes;
 import com.dedotatedwam.jjhorticulture.block.BlockFertilizerApplier;
 import com.dedotatedwam.jjhorticulture.item.ItemJJBasic;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.EnumDyeColor;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy {
@@ -21,8 +17,7 @@ public class CommonProxy {
 
     public static BlockFertilizerApplier fertilizer_applier;     // Fertilizer applier block
 
-
-    public void preInit()
+    public static void preInit()
     {
         //Items
         pH_tester = (ItemJJBasic)(new ItemJJBasic().setUnlocalizedName("pH_tester"));
@@ -39,25 +34,12 @@ public class CommonProxy {
         GameRegistry.registerBlock(fertilizer_applier, "fertilizer_applier");
     }
 
-    public void init()
+    public static void init()
     {
-        final int BONEMEAL_DAMAGE_VALUE = EnumDyeColor.WHITE.getDyeDamage();
-        GameRegistry.addRecipe(new ItemStack(hand_fertilizer_applier,1), new Object[]{
-                "ADA",
-                "AAA",
-                ".A.",
-                'A', Items.iron_ingot, 'D', new ItemStack(Items.dye, 1, BONEMEAL_DAMAGE_VALUE)
-        });
-
-        GameRegistry.addRecipe(new ItemStack(fertilizer_applier,1), new Object[]{
-                "BBB",
-                "BAB",
-                "BCB",
-                    'A', Items.iron_ingot, 'B', Blocks.cobblestone, 'C', hand_fertilizer_applier
-        });
+        Recipes.register();
     }
 
-    public void postInit()
+    public static void postInit()
     {
 
     }

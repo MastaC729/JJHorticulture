@@ -27,12 +27,12 @@ public class JJHorticulture
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+        proxy.init();
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+        proxy.postInit();
     }
 }

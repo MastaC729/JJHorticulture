@@ -10,10 +10,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ClientProxy extends CommonProxy {
 
-    public void preInit()
+    public static void preInit()
     {
-        super.preInit();
-
+        System.out.println("NIGGA JAMES");
+        System.out.println("IS THIS THING ON???");
+        System.out.println("NIGGA JAMES");
         //Items with only one texture (pH tester, nutrient tester, etc.)
         ModelResourceLocation res = new ModelResourceLocation(Reference.MODID + ":" + pH_tester.getUnlocalizedName().substring(5), "inventory");
         ModelLoader.setCustomModelResourceLocation(CommonProxy.pH_tester, Reference.DEFAULT_ITEM_SUBTYPE, res);
@@ -30,12 +31,12 @@ public class ClientProxy extends CommonProxy {
         ModelLoader.setCustomModelResourceLocation(item_fertilizer_applier, Reference.DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);
     }
 
-    public void init()
+    public static void init()
     {
 
     }
 
-    public void postInit()
+    public static void postInit()
     {
 
     }
