@@ -2,6 +2,7 @@ package com.dedotatedwam.jjhorticulture;
 
 
 import com.dedotatedwam.jjhorticulture.proxy.CommonProxy;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -28,6 +29,7 @@ public class JJHorticulture
     public void init(FMLInitializationEvent event)
     {
         proxy.init();
+        MinecraftForge.EVENT_BUS.register(new JJEventHandler());
     }
 
     @EventHandler
