@@ -27,12 +27,7 @@ public class JJHorticulture
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        /*GameRegistry.addRecipe(new ItemStack(pH_tester,1), new Object[]{
-            "A  ",
-            "A  ",
-            'A', Items.iron_ingot
-    });*/
-        // TODO Move the above recipe call to its proper location
+
     }
 
     @EventHandler

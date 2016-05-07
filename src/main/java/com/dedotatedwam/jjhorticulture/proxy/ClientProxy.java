@@ -21,10 +21,13 @@ public class ClientProxy extends CommonProxy {
         res = new ModelResourceLocation(Reference.MODID + ":" + nutrient_tester.getUnlocalizedName().substring(5), "inventory");
         ModelLoader.setCustomModelResourceLocation(CommonProxy.nutrient_tester, Reference.DEFAULT_ITEM_SUBTYPE, res);
 
+        res = new ModelResourceLocation(Reference.MODID + ":" + hand_fertilizer_applier.getUnlocalizedName().substring(5), "inventory");
+        ModelLoader.setCustomModelResourceLocation(CommonProxy.hand_fertilizer_applier, Reference.DEFAULT_ITEM_SUBTYPE, res);
+
         //Blocks
-        Item itemFertilizerApplier = GameRegistry.findItem(Reference.MODID, "fertilizer_applier");
-        ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(Reference.MODID + ":" + itemFertilizerApplier.getUnlocalizedName().substring(5), "inventory");
-        ModelLoader.setCustomModelResourceLocation(itemFertilizerApplier, Reference.DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);
+        Item item_fertilizer_applier = GameRegistry.findItem(Reference.MODID, "fertilizer_applier");
+        ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(Reference.MODID + ":" + item_fertilizer_applier.getUnlocalizedName().substring(5), "inventory");
+        ModelLoader.setCustomModelResourceLocation(item_fertilizer_applier, Reference.DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);
     }
 
     public void init()
